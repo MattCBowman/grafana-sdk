@@ -315,6 +315,15 @@ type Target struct {
 
 	// For Graphite
 	Target string `json:"target,omitempty"`
+
+	// For CloudWatch
+	Region     string            `json:"region,omitempty"`
+	Namespace  string            `json:"namespace,omitempty"`
+	MetricName string            `json:"metricName,omitempty"`
+	Dimensions map[string]string `json:"dimensions,omitempty"`
+	Statistics []string          `json:"statistics,omitempty"`
+	Alias      string            `json:"alias,omitempty"`
+	Period     string            `json:"period,omitempty"`
 }
 
 type MapType struct {
