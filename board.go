@@ -45,6 +45,7 @@ type (
 		Slug            string     `json:"slug"`
 		Title           string     `json:"title"`
 		OriginalTitle   string     `json:"originalTitle"`
+		Description     string     `json:"description"`
 		Tags            []string   `json:"tags"`
 		Style           string     `json:"style"`
 		Timezone        string     `json:"timezone"`
