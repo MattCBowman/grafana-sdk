@@ -333,6 +333,9 @@ type Target struct {
 	Statistics []string          `json:"statistics,omitempty"`
 	Alias      string            `json:"alias,omitempty"`
 	Period     string            `json:"period,omitempty"`
+	
+	// For Azure
+	AzureMonitor map[string]string `json:"azureMonitor,omitempty"`
 }
 
 type MapType struct {
