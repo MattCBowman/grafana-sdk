@@ -88,7 +88,6 @@ type (
 		Bars        bool        `json:"bars"`
 		DashLength  *uint       `json:"dashLength,omitempty"`
 		Dashes      *bool       `json:"dashes,omitempty"`
-		Decimals    *uint       `json:"decimals,omitempty"`
 		Fill        int         `json:"fill"`
 		//		Grid        grid        `json:"grid"` obsoleted in 4.1 by xaxis and yaxis
 
@@ -309,7 +308,6 @@ type Target struct {
 		Type  string `json:"type"`
 	} `json:"metrics,omitempty"`
 	Query      string `json:"query,omitempty"`
-	Alias      string `json:"alias,omitempty"`
 	RawQuery   bool   `json:"rawQuery,omitempty"`
 	TimeField  string `json:"timeField,omitempty"`
 	BucketAggs []struct {
